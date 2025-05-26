@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font as recommended */
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333; /* Default text color */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* White background for content */
+            border-radius: 8px; /* Rounded corners for the main container */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        h1, h2, h3 {
+            color: #1a202c; /* Darker color for headings */
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        p, li, label, input, button, a {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        a {
+            color: #3182ce; /* Blue color for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 8px; /* Rounded corners for images */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        div.styled-div {
+            padding: 15px;
+            border: 1px solid #e2e8f0; /* Light border for div */
+            border-radius: 8px; /* Rounded corners for div */
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-color: #f7fafc; /* Very light gray background for div */
+        }
+        input[type="text"], input[type="submit"], button {
+            padding: 10px 15px;
+            border: 1px solid #cbd5e0; /* Border for inputs and button */
+            border-radius: 6px; /* Rounded corners */
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        input[type="submit"], button {
+            background-color: #4a5568; /* Dark gray-blue for buttons */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #2d3748; /* Darker shade on hover */
+        }
+        form {
+            margin-top: 15px;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background-color: #f7fafc;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .message-box {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #e6fffa; /* Light teal for message box */
+            color: #234e52; /* Dark teal text */
+            border: 1px solid #b2f5ea; /* Teal border */
+            min-height: 20px; /* Ensure it's visible even when empty */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 md:p-8">
+
+    ' -->
+    <div class="container mx-auto p-6 bg-white rounded-lg shadow-lg">
+
+        <h1 class="text-4xl font-bold text-center text-gray-700 mb-6">Hello World</h1>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Headings Showcase</h2>
+            <h1 class="text-3xl font-bold">Heading 1</h1>
+            <h2 class="text-2xl font-semibold">Heading 2</h2>
+            <h3 class="text-xl">Heading 3</h3>
+        </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Paragraph</h2>
+            <p class="text-gray-700 leading-relaxed">This is a paragraph of text.</p>
+        </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Hyperlink</h2>
+            <a href="https://example.com" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Visit Example</a>
+            </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Image</h2>
+            <img src="data:image/jpeg;base64,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" alt="Placeholder Image" class="rounded-md shadow-sm mx-auto block" onerror="this.onerror=null;this.src='https://placehold.co/150x150/cccccc/ffffff?text=Image+Not+Found';">
+            </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Lists</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-lg font-medium text-gray-600 mb-2">Unordered List:</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Another Item</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-gray-600 mb-2">Ordered List:</h3>
+                    <ol class="list-decimal list-inside text-gray-700">
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50 styled-div">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Div and Span</h2>
+            <div class="p-4 bg-blue-50 rounded-md">
+                This is a <span class="text-red-600 font-semibold">red</span> word in a div.
+            </div>
+        </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Text Input</h2>
+            <input type="text" placeholder="Enter name" class="w-full md:w-1/2 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Form Example</h2>
+            <form action="#" method="POST" class="space-y-4 bg-green-50 p-4 rounded-md">
+                <div>
+                    <label for="nameInput" class="block text-sm font-medium text-gray-700">Name:</label>
+                    <input type="text" id="nameInput" placeholder="Name" class="mt-1 block w-full md:w-1/2 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 cursor-pointer">
+                </div>
+            </form>
+        </section>
+
+        <section class="mb-6 p-4 border border-gray-200 rounded-md bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-600 mb-3">Button Click Action</h2>
+            <button id="myButton" class="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 cursor-pointer">Click Me</button>
+            <div id="clickMessage" class="mt-3 p-3 min-h-[40px] bg-purple-100 text-purple-700 border border-purple-200 rounded-md message-box">
+                </div>
+        </section>
+
+    </div>
+
+    <script>
+        // JavaScript for the button click (item 14)
+        // This script ensures that we don't use alert()
+        const myButton = document.getElementById('myButton');
+        const clickMessageDiv = document.getElementById('clickMessage');
+
+        if (myButton && clickMessageDiv) {
+            myButton.addEventListener('click', function() {
+                clickMessageDiv.textContent = 'Clicked!'; // Set the text content
+                // Optional: Clear the message after a few seconds
+                setTimeout(() => {
+                    clickMessageDiv.textContent = '';
+                }, 3000); // Clears after 3 seconds
+            });
+        } else {
+            console.error("Button or message div not found. Check IDs.");
+        }
+    </script>
+
+</body>
+</html>
